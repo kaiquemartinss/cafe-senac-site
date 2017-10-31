@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Café Senac</title>
+	<style type="text/css">
+		
+		@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+		#barra_topo{
+			width: 100%;
+			height: 100px;
+			background-color: #2f1b05;
+			line-height: 90px;/*Centralizar o conteúdo*/
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+
+		#barra_logo{
+			width: 1001px;
+			height: 100px;
+			margin: auto;
+		}
+
+		body{
+			background-attachment: fixed;
+			background-repeat: repeat-x;
+			background-image: url(imagens/fundo_linha.jpg);
+		}
+
+		#principal{
+			width: 1001px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		#banner{
+			width: 1001px;
+			height: 400px;
+		}
+
+		#menu{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+			margin-bottom: 20px;
+
+		}
+	/*Inicio do menu*/
+		#menu ul{
+			margin:0px;
+			padding: 0px;
+			list-style-type: none;
+		}
+
+		#menu ul li{
+			float: left;
+		}
+
+		#menu ul a{
+			display: block; /*Divisão de cada link*/
+			width: 143px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			text-decoration: none;
+			font-family: 'Lobster', cursive;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		#menu ul a:hover{
+			background-color: #533939;
+			text-decoration: underline;
+		}
+
+		/*----------Inicio do formulario----------*/
+
+		form{
+			width: 500px;
+			margin: auto;
+			font-family: arial;
+			font-size: 13px;
+		}
+		
+		legend{
+			color: #999999;
+			font-weight: bold;
+			font-size: 13px;
+			font-family: arial;
+			margin: auto;
+		}
+
+		fieldset{
+			border-color: #949494;
+			margin: 20px;
+		}
+
+		fieldset#sexo{
+			width: 150px;
+		}
+
+		#rodape{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+			clear: both;
+		}
+
+		#rodape p{
+			font-family: arial;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			padding-top: 15px;
+			
+		}
+
+		#redes{
+			position: fixed;
+			width: 32px;
+			top: 50%;
+			margin-top: -100px;
+			left: -29px;
+			transition:0.5s ease-in;
+		}
+
+		#redes:hover{
+			left: 0px;
+			transition: 0.5s ease-in;
+		}
+	</style>
+</head>
+<body>
+	<header id="barra_topo">
+		<header id="barra_logo">
+			<img src="imagens/logo.png" />
+		</header>
+	</header>
+	<main id="principal">
+		<aside id="banner">
+			<img src="imagens/banner_contato.jpg" width="1001px" />
+		</aside>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="promocoes.html">Promoções</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="local.html">Localização</a></li>
+				<li><a href="ambiente.html">Ambiente</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+			</ul>
+		</nav>
+		
+		<form method="post" id="fContato" action="">
+			<fieldset id="usuario">
+				<legend>Identificação do Usuário</legend>
+					<p><label for="cNome">Nome:</label>
+						<input type="text" name="tNome" id="cNome" size="38" maxlength="30" placeholder="Nome Completo" /></p>
+
+					<p><label for="cSenha">Senha:</label>
+						<input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos" /></p>
+
+					<p><label for="cMail">E-mail:</label>
+						<input type="email" name="tMail" id="cMail" size="20" maxlength="40" placeholder="Digite seu E-mail"></p>
+
+				<fieldset id="sexo">
+					<legend>Sexo:</legend>
+						<input type="radio" name="tSexo" id="cMasc" value="Masculino" />
+							<label for="cMasc">Masculino</label><br />
+
+						<input type="radio" name="tSexo" id="cFem" value="Feminino" />
+							<label for="cFem">Feminino</label>
+				</fieldset>
+
+					<p>Data de Nascimento:
+						<input type="date" name="tNasc" id="cNasc" /></p>
+			</fieldset>
+
+			<fieldset id="endereco">
+				<legend>Endereço do Usuário</legend>
+					<p>Logradouro:</p>
+						<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav, ..." />
+					</p>
+
+					<p>Número:
+						<input type="number" name="tNum" id="cNum" min="0" max="99999" />
+					</p>
+				
+					<p>Estado:
+						<select name="tEst" id="cEst">
+							<optgroup label="Região Sudeste">
+								<option value="SP">São Paulo</option>
+								<option value="RJ">Rio de Janeiro</option>
+								<option value="MG">Minas Gerais</option>
+							</optgroup>
+							
+							<optgroup label="Região Sul">
+								<option value="PR">Paraná</option>
+								<option value="SC" selected>Santa Catarina</option>
+								<option value="RS">Rio Grande do Sul</option>
+							</optgroup>
+						</select>
+					</p>
+
+					<p>Cidade:
+						<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades" />
+
+					<datalist id="cidades">
+						<option value="São Paulo"></option>
+						<option value="Osasco"></option>
+						<option value="São Caetano"></option>
+						<option value="São Bernardo"></option>
+					</datalist>
+					</p>
+			</fieldset>
+
+			<fieldset id="Mensagem">
+				<legend>Mensagem do Usuário</legend>
+					<p>Grau de Urgência:
+						Min
+						<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2" />
+						Max
+					</p>
+
+					<p>
+					Mensagem:<br />
+					<textarea name="tMsg" id="cMsg" cols="45" rows="8" placeholder="Deixe aqui a sua mensagem">
+					</textarea>
+					</p>
+			</fieldset>
+
+			<fieldset id="pedido">
+				<legend>Quero um produto</legend>
+					<input type="checkbox" name="tPed" id="cPed" value="quero_um_produto" />
+						<label for="cPed">
+							Gostaria de adquirir um produto quando disponivel
+						</label>
+				<p>Cor:
+					<input type="color" name="cCor" value="#00ff00" />
+				</p>
+			</fieldset>
+
+			<input type="submit" value="Enviar" />
+			
+		</form>
+
+		<footer id="rodape"><p>Avenida do Café, 298 - Jabaquara</p></footer>
+
+		<div id="redes">
+
+		<a href="http://www.twitter.com.br" target="_blank"><img src="imagens/twitter.png" /></a>
+		<a href="https://pt-br.facebook.com/" target="_blank"><img src="imagens/facebook.png" /></a>
+		<a href="https://plus.google.com/?hl=pt_BR" target="_blank"><img src="imagens/google-plus.png" /></a>
+		<a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" /></a>
+		<a href="https://br.linkedin.com/" target="_blank"><img src="imagens/linkedin.png" /></a>
+		<a href="https://br.pinterest.com/" target="_blank"><img src="imagens/pinterest.png" /></a>
+
+		</div>
+	</main>
+</body>
+</html>

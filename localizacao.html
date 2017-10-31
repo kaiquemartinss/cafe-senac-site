@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Café Senac</title>
+	<style type="text/css">
+		
+		#barra_topo{
+			width: 100%;
+			height: 100px;
+			background-color: #2f1b05;
+			line-height: 90px;/*Centralizar o conteúdo*/
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+
+		#barra_logo{
+			width: 1001px;
+			height: 100px;
+			margin: auto;
+		}
+
+		#principal{
+			width: 1001px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		#banner{
+			width: 1001px;
+			height: 400px;
+		}
+
+		#menu{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+		}
+	/*Inicio do menu*/
+		#menu ul{
+			margin:0px;
+			padding: 0px;
+			list-style-type: none;
+		}
+
+		#menu ul li{
+			float: left;
+		}
+
+		#menu ul a{
+			display: block; /*Divisão de cada link*/
+			width: 143px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			text-decoration: none;
+			font-family: arial;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		#menu ul a:hover{
+			background-color: #533939;
+			text-decoration: underline;
+		}
+
+		
+		#rodape{
+			width: 1001px;
+			height: 50px;
+			background-color: #f35a18;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<header id="barra_topo">
+		<header id="barra_logo">
+			<img src="imagens/logo.png" />
+		</header>
+	</header>
+	<main id="principal">
+		<aside id="banner">
+			<img src="imagens/banner_local.jpg" width="1001px" />
+		</aside>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="promocoes.html">Promoções</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="local.html">Localização</a></li>
+				<li><a href="ambiente.html">Ambiente</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+			</ul>
+		</nav>
+		
+		<footer id="rodape"></footer>
+	</main>
+</body>
+</html>

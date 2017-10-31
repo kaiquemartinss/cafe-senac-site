@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">  
+	<title> Café Senac </title>
+		<link rel="icon" href="imagens/logo_aba.png" />
+	<!-- início do CSS -->
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+		@import url('https://fonts.googleapis.com/css?family=Lobster');
+		@import url('https://fonts.googleapis.com/css?family=Lato|Slabo+27px');
+		
+		#barra_topo{
+			width: 100%;
+			height: 100px;
+			background-color: #2f1b05;
+			line-height: 90px;/*Centralizar o conteúdo*/
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+
+		#barra_logo{
+			width: 1001px;
+			height: 100px;
+			margin: auto;
+		}
+
+		body{
+			background-attachment: fixed;
+			background-repeat: repeat-x;	
+			background-image: url(imagens/fundo_linha.jpg);	
+		}
+		
+		
+		#principal{
+			width: 1001px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		#banner{
+			width: 1001px;
+			height: 400px;
+		}
+
+		#menu{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+		}
+	/*Inicio do menu*/
+		#menu ul{
+			margin:0px;
+			padding: 0px;
+			list-style-type: none;
+		}
+
+		#menu ul li{
+			float: left;
+		}
+
+		#menu ul a{
+			display: block; /*Divisão de cada link*/
+			width: 143px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			text-decoration: none;
+			font-family: 'Lobster', cursive;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		#menu ul a:hover{
+			background-color: #533939;
+			text-decoration: underline;
+		}
+
+		#promo_p{   /* suporte a section do lado direito */
+			width: 385px;
+			float: left;
+		}
+
+		/* formatação da 1ª section */
+
+		figure {  /* não usamos "#" pois trata-se de uma TAG */
+			margin: 0px; /* usamos margin = 0 para chapar a figure no lado esquerdo e no topo */
+			width: 80px;
+			height: 80px;
+			background-color: #888;
+			float: left;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+
+		#text_promo{ /* usamos o "#" devido ao "id" do article */
+			width: 300px;
+			height: 80px;
+			float: left;
+			background-color: #fff;
+			margin-bottom: 5px;
+			border-bottom: 1px dashed #000; /* borda trachejada de 1 px */
+
+		}
+
+		h5{
+			margin: 0px;
+			color: #8B4513;
+			font-size: 18px;
+			font-family: 'Slabo 27px', serif;
+		}
+
+		article p{
+			font-family: 'Lato', sans-serif;
+			font-size: 14px;
+		}
+
+		/* formatação da 2ª section */
+
+		#promo_g{
+			width: 611px; /* conta : 1001 - 385 - 5 = 611 */ 
+			height: 420px; /* conta : 80 * 5 + 20 = 420 "4 espaços ente as linhas"*/
+			float: right;
+			background-color: #777;
+		}
+
+		#redes{
+			position: fixed;
+			width: 32px;
+			top: 50%;
+			margin-top: -100px;
+			left: -29px;
+			transition:0.5s ease-in;
+		}
+
+		#redes:hover{
+			left: 0px;
+			transition: 0.5s ease-in;
+		}
+
+		#rodape{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+			clear: both;
+		}
+
+		#rodape p{
+			font-family: arial;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			padding-top: 15px;
+			
+		}
+
+	</style>
+</head>
+
+<body>
+	<header id="barra_topo">
+		<header id="barra_logo">
+			<img src="imagens/logo.png" />
+		</header>
+	</header>
+	<main id="principal">
+		<aside id="banner">
+			<img src="imagens/banner_promocoes.jpg" width="1001px" />
+		</aside>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="promocoes.html">Promoções</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="local.html">Localização</a></li>
+				<li><a href="ambiente.html">Ambiente</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+			</ul>
+		</nav>
+
+<section id="promo_p"> <!-- section da esquerda : imagens pequenas e textos ao lado -->
+	<!-- 2ª feira -->
+	<figure>
+		<a href="promo_01.html" target="promo"> <!-- usa-se o target para chamar o iframe criado na section  -->
+		<img src="imagens/promo_p01.jpg" /> 
+		</a>
+	</figure> <!-- usamos figure devido a semântica do Google -->
+	<article id="text_promo"> 
+		<h5> Segunda - Feira </h5>
+		<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	</article>
+
+	<!-- 3ª feira -->
+
+	<figure> 
+		<a href="promo_02.html" target="promo">
+		<img src="imagens/promo_p02.jpg" /> 
+		</a>
+	</figure>
+	<article id="text_promo"> 
+		<h5> Terça - Feira </h5>
+		<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	</article>
+
+	<!-- 4ª feira -->
+
+	<figure> 
+		<a href="promo_03.html" target="promo">
+		<img src="imagens/promo_p03.jpg" /> 
+		</a>
+	</figure>
+	<article id="text_promo"> 
+		<h5> Quarta - Feira </h5>
+		<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	</article>
+
+	<!-- 5ª feira -->
+
+	<figure> 
+		<a href="promo_04.html" target="promo">
+		<img src="imagens/promo_p04.jpg" />  
+		</a>
+	</figure>
+	<article id="text_promo"> 
+		<h5> Quinta - Feira </h5>
+		<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	</article>
+
+	<!-- 6ª feira -->
+
+	<figure> 
+		<a href="promo_05.html" target="promo">
+		<img src="imagens/promo_p05.jpg" /> 
+	</a>
+	</figure>
+	<article id="text_promo"> 
+		<h5> Sexta - Feira </h5>
+		<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+	</article>
+
+</section>
+
+<section id="promo_g">  <!-- section do lado direito, imagem grande -->
+	<!-- usa-se o iframe devido a navegação dentro da própria página -->
+	<iframe src="promo_01.html" width="611" height="420" scrolling="no" frameborder="0" name="promo"></iframe>
+
+</section> 
+
+<footer id="rodape"><p>Avenida do Café, 298 - Jabaquara</p></footer>
+<div id="redes"> <!-- Menu lateral de links social media -->
+<a href="https://twitter.com/senacsaopaulo?lang=pt" target="_blank"> <img src="imagens/twitter.png"> </a>
+<a href="https://www.facebook.com/senacjabaquarasp/" target="_blank"> <img src="imagens/facebook.png"> </a>
+<a href="https://plus.google.com/+SenacLapaScipi%C3%A3oS%C3%A3oPaulo" target="_blank"> 
+<img src="imagens/google-plus.png"> </a>
+<a href="https://www.instagram.com/senacsaopaulo/" target="_blank"> <img src="imagens/instagram.png"> </a>
+<a href="https://br.linkedin.com/company/senac" target="_blank"> <img src="imagens/linkedin.png"> </a>
+<a href="https://br.pinterest.com/senacsaopaulo/" target="_blank"> <img src="imagens/pinterest.png"> </a>
+
+</div>
+</main>
+
+</body>
+</html>

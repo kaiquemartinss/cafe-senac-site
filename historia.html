@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Café Senac</title>
+	<style type="text/css">
+		
+		@import url('https://fonts.googleapis.com/css?family=Lobster');
+		@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+			
+		#barra_topo{
+			width: 100%;
+			height: 100px;
+			background-color: #2f1b05;
+			line-height: 90px;/*Centralizar o conteúdo*/
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+
+		#barra_logo{
+			width: 1001px;
+			height: 100px;
+			margin: auto;
+		}
+
+		body{
+			background-attachment: fixed;
+			background-repeat: repeat-x;
+			background-image: url(imagens/fundo_linha.jpg);
+		}
+
+		#principal{
+			width: 1001px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		#banner{
+			width: 1001px;
+			height: 400px;
+		}
+
+		#menu{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+		}
+	/*Inicio do menu*/
+		#menu ul{
+			margin:0px;
+			padding: 0px;
+			list-style-type: none;
+		}
+
+		#menu ul li{
+			float: left;
+		}
+
+		#menu ul a{
+			display: block; /*Divisão de cada link*/
+			width: 143px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			text-decoration: none;
+			font-family: 'Lobster', cursive;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		#menu ul a:hover{
+			background-color: #533939;
+			text-decoration: underline;
+		}
+
+		#titulo{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: 0px;
+			margin-right: 15px;
+			width: 375px;
+			height: 350px;
+			background-color: #ffdab9;
+			padding: 25px;
+			border-radius: 10px;
+			text-align: justify;
+			text-indent: 20px;
+			float: left;		
+		}
+
+		#titulo h2{
+			font-family: 'Lobster', cursive;
+			font-size:30px;
+			color: #2f1b05;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+
+		#titulo p{
+			font-family: 'Yanone Kaffeesatz', sans-serif;
+			font-size: 20px;
+			color:#2f1b05;
+			text-align:justify;
+		}
+
+		#confira p{
+			font-family: 'Lobster', cursive;
+			font-size:20px;
+			color: #2f1b05;
+			text-align: right;
+			margin-top: -10px;
+		}
+
+		#video{
+			margin-top: 10px;
+			width: 350px;
+			height: 350px;
+			margin-bottom: 10px;
+			float: left;
+
+		}
+
+		
+		#rodape{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+			clear: both;
+		}
+
+		#rodape p{
+			font-family: arial;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			padding-top: 15px;
+			
+		}
+
+		#redes{
+			position: fixed;
+			width: 32px;
+			top: 50%;
+			margin-top: -100px;
+			left: -29px;
+			transition:0.5s ease-in;
+		}
+
+		#redes:hover{
+			left: 0px;
+			transition: 0.5s ease-in;
+		}
+	</style>
+</head>
+<body>
+	<header id="barra_topo">
+		<header id="barra_logo">
+			<img src="imagens/logo.png" />
+		</header>
+	</header>
+	<main id="principal">
+		<aside id="banner">
+			<img src="imagens/banner_historia.jpg" width="1001px" />
+		</aside>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="promocoes.html">Promoções</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="local.html">Localização</a></li>
+				<li><a href="ambiente.html">Ambiente</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+			</ul>
+		</nav>
+		<article id="titulo">
+			<h2>História do Café Senac</h2>
+			<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p><br />
+			<article id="confira"><p>Assista o video ao lado:</p></article>
+		</article>
+
+		<aside id="video"><iframe width="560" height="400" src="https://www.youtube.com/embed/2O9sqvX3mIs?rel=0" frameborder="0" allowfullscreen></iframe></aside>
+		
+		<footer id="rodape"><p>Avenida do Café, 298 - Jabaquara</p></footer>
+
+		<div id="redes">
+
+		<a href="http://www.twitter.com.br" target="_blank"><img src="imagens/twitter.png" /></a>
+		<a href="https://pt-br.facebook.com/" target="_blank"><img src="imagens/facebook.png" /></a>
+		<a href="https://plus.google.com/?hl=pt_BR" target="_blank"><img src="imagens/google-plus.png" /></a>
+		<a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" /></a>
+		<a href="https://br.linkedin.com/" target="_blank"><img src="imagens/linkedin.png" /></a>
+		<a href="https://br.pinterest.com/" target="_blank"><img src="imagens/pinterest.png" /></a>
+
+		</div>
+	</main>
+</body>
+</html>

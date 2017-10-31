@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Café Senac</title>
+	<style type="text/css">
+		
+		@import url('https://fonts.googleapis.com/css?family=Lobster');
+		
+		#barra_topo{
+			width: 100%;
+			height: 100px;
+			background-color: #2f1b05;
+			line-height: 90px;/*Centralizar o conteúdo*/
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+
+		#barra_logo{
+			width: 1001px;
+			height: 100px;
+			margin: auto;
+		}
+
+		body{
+			background-attachment: fixed;
+			background-repeat: repeat-x;
+			background-image: url(imagens/fundo_linha.jpg);
+		}
+
+		#principal{
+			width: 1001px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		#banner{
+			width: 1001px;
+			height: 400px;
+		}
+
+		#menu{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+		}
+	/*Inicio do menu*/
+		#menu ul{
+			margin:0px;
+			padding: 0px;
+			list-style-type: none;
+		}
+
+		#menu ul li{
+			float: left;
+		}
+
+		#menu ul a{
+			display: block; /*Divisão de cada link*/
+			width: 143px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			text-decoration: none;
+			font-family: 'Lobster', cursive;
+			font-size: 18px;
+			color: #fff;
+		}
+		
+		#menu ul a:hover{
+			background-color: #533939;
+			text-decoration: underline;
+		}
+
+		/*-----Aqui começa o conteudo-------*/
+
+		#titulo{
+			margin: auto;
+			width: 940px;
+			height: 100px;
+			background-color: #ffdead;
+			padding: 30px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			border-radius: 10px;
+			text-align: justify;
+		}
+
+		#titulo h2{
+			font-family: 'Lobster',cursive;
+			font-size: 30px;
+			color: #2f1b05;
+			text-align: center;
+			margin-top: 0px;
+			margin-bottom: 5px;
+		}
+
+		#titulo p{
+			font-family: 'Lobster',cursive;
+			font-size: 15px;
+			color: #2f1b05;
+			text-align: justify;
+		}
+
+		#mapa{
+			width: 600px;
+			height: 438px;
+			background-color: #999;
+			float: left;
+			margin:0px;
+			margin-bottom: 10px;
+		}
+
+		#unidades{
+			width: 390px;
+			height: 438px;
+			float: right;
+			background-color: #999;
+			margin: 0px;
+		}
+
+		#btn_reservas{
+			width: 390px;
+			height: 50px;
+			clear: both;
+			background-color: #999;
+			margin: 0px;
+			margin-bottom: 10px;
+			float: right;
+		}
+
+		#rodape{
+			width: 1001px;
+			height: 50px;
+			background-color: #2f1b05;
+			clear: both;
+		}
+
+		#rodape p{
+			font-family: arial;
+			font-size: 16px;
+			color: #fff;
+			text-align: center;
+			padding-top: 15px;
+			
+		}
+
+		#redes{
+			position: fixed;
+			width: 32px;
+			top: 50%;
+			margin-top: -100px;
+			left: -29px;
+			transition:0.5s ease-in;
+		}
+
+		#redes:hover{
+			left: 0px;
+			transition: 0.5s ease-in;
+		}
+	</style>
+</head>
+<body>
+	<header id="barra_topo">
+		<header id="barra_logo">
+			<img src="imagens/logo.png" />
+		</header>
+	</header>
+	<main id="principal">
+		<aside id="banner">
+			<img src="imagens/banner_reservas.jpg" width="1001px" />
+		</aside>
+		<nav id="menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="promocoes.html">Promoções</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="local.html">Localização</a></li>
+				<li><a href="ambiente.html">Ambiente</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="reservas.html">Reservas</a></li>
+			</ul>
+		</nav>
+		
+		<article id="titulo">
+			<h2>Escolha uma de nossas unidades</h2>
+			<p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+			
+		</article>
+
+		<figure id="mapa">
+			<img src="imagens/mapa_unidades.jpg" usemap="#mapa" />
+			<map name="mapa">
+				<area shape="rect" coords="0,213,46,295" href="imagens/unidade_museu.jpg" target="unidades">
+				<area shape="circle" coords="347,177,54" href="imagens/unidade_stadium.jpg" target="unidades">
+				<area shape="poly" coords="55,315,101,291,173,345,166,391,118,417,54,353" href="imagens/unidade_library.jpg" target="unidades">
+				<area shape="poly" coords="62,129,92,127,142,117,158,123,155,170,75,192,74,151,61,143" href="imagens/unidade_shopping.jpg" target="unidades">
+				<area shape="poly" coords="440,233,499,209,588,240,590,277,541,314,441,277," href="imagens/unidade_centro.jpg" target="unidades">
+				<area shape="rect" coords="83,222,116,258" href="imagens/unidade_esquina.jpg" target="unidades">
+			</map>
+		</figure>
+
+		<figure id="unidades">
+			<iframe src="imagens/abre_unidades.jpg" width="390" height="438" frameborder="0" scrolling="no" name="unidades"></iframe>
+		</figure>
+
+		<figure id="btn_reservas">
+		<a href="contato.html">
+			<img src="imagens/btn_reservar.jpg" />
+		</a>
+		</figure>
+
+		<footer id="rodape"><p>Avenida do Café, 298 - Jabaquara</p></footer>
+
+		<div id="redes">
+
+		<a href="http://www.twitter.com.br" target="_blank"><img src="imagens/twitter.png" /></a>
+		<a href="https://pt-br.facebook.com/" target="_blank"><img src="imagens/facebook.png" /></a>
+		<a href="https://plus.google.com/?hl=pt_BR" target="_blank"><img src="imagens/google-plus.png" /></a>
+		<a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="imagens/instagram.png" /></a>
+		<a href="https://br.linkedin.com/" target="_blank"><img src="imagens/linkedin.png" /></a>
+		<a href="https://br.pinterest.com/" target="_blank"><img src="imagens/pinterest.png" /></a>
+
+		</div>
+	</main>
+</body>
+</html>
